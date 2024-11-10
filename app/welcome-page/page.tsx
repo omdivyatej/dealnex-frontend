@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -52,9 +50,11 @@ export default function WelcomePage() {
         </p>
         <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row items-center">
           {/* Upload Button */}
-          <Button size="lg" className="w-48 bg-gray-800 hover:bg-gray-900 text-white">
-            Upload
-          </Button>
+          <Link href="https://google.com">
+            <Button size="lg" className="w-48 bg-gray-800 hover:bg-gray-900 text-white">
+              Upload
+            </Button>
+          </Link>
           {/* Dropdown Menu */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
