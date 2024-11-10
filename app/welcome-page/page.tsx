@@ -50,7 +50,7 @@ export default function WelcomePage() {
         </p>
         <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row items-center">
           {/* Upload Button */}
-          <Link href="https://google.com">
+          <Link href="https://dealnex-v1.onrender.com/">
             <Button size="lg" className="w-48 bg-gray-800 hover:bg-gray-900 text-white">
               Upload
             </Button>
