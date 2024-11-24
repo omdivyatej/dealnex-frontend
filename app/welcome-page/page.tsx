@@ -22,6 +22,13 @@ const clairtyCode = `
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "p32eafpv4g");`
 
+const googleAnalyticsCode = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3ZRTGPQ62H');
+`;
+
 export default function WelcomePage() {
   return (
     <>
@@ -100,6 +107,14 @@ export default function WelcomePage() {
       </div>
         <Script id="ms-clarity" strategy="afterInteractive">
           {clairtyCode}
+        </Script>
+        
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3ZRTGPQ62H"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {googleAnalyticsCode}
         </Script>
     </>
   );
