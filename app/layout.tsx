@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        
         <title>DealNex | Data Driven Deals</title> {/* Explicitly set the title */}
       </head>
       <body
